@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ex2tp2adouaniyasmin</title>
+    <meta charset="UTF-8">
+</head>
+     <body>
+
+
+<script type="text/javascript">
+  
+  
+var Film={
+  init:function(title,year){
+    this.title=title;
+    this.year=year;
+  },
+  decrire:function(){
+    var description=this.title + "(" + this.year + ")";
+    return description;
+  }
+}
+
+
+var films= [];
+
+var film = Object.create(Film);
+film.init("taxi driver",1976);
+films.push(film);
+
+var film = Object.create(Film);
+film.init("pulp fiction",1994);
+films.push(film);
+
+var film = Object.create(Film);
+film.init("fight club",1999);
+films.push(film);
+
+var film = Object.create(Film);
+film.init("blackswan",2003);
+films.push(film);
+
+var film = Object.create(Film);
+film.init("midsommar",2019);
+films.push(film);
+
+
+//affichage de tab
+films.forEach(function(film) {
+   document.getElementById("tab").innerHTML +=  "<th>"+ film.decrire() + "</th>";
+});
+
+</script>
+
+
+
+      <style> 
+      body{
+  background-color:#FBB117;
+  
+}
+h1{
+  text-align:center;
+}
+      table{
+        margin-left:auto;
+        margin-right:auto;
+        width:750px;
+        height:80px;
+      }
+         table,
+        th {
+            border: 1px solid black;
+        }
+      </style>
+      
+      <h1 style='color:white'> MOVIES </h1>
+      <br> 
+      <br>
+      <br>
+      
+      <table> 
+         
+
+        </tr>
+        <tr id="tab">
+        
+        </tr>
+      </table>
+    </body>
+    </html>
