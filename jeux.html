@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion </title>
+    <link rel="stylesheet" href="jeux.css">
+   
+   
+</head>
+<body>
+    <section>
+        <div class="alaa"></div>
+        <div class="alaa"></div>
+        <div class="alaa"></div>
+        
+        <div class="box">
+           
+            <div class="container">
+                <div class="form">
+                    <h2>click here !</h2>
+
+                   
+                    <div class="shebox">
+                        <input type="submit" value="Pair" id="btn">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="box">
+           
+            <div class="container">
+                <div class="form">
+                    <h2>click here !</h2>
+
+                    <div class="shebox">
+    
+                        <input type="submit" value="Impair" id="btn1">
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div><br>
+        <div class="box">
+           
+            <div class="container1">
+                <div class="form">
+                   
+                    <div class="shebox">
+    
+                        <input type="submit" value="test" id="te">                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script type="text/javascript">
+        var count ;
+        var btn = document.getElementById("btn");
+        var btn1 = document.getElementById("btn1");
+        var te = document.getElementById("te");
+         var disp = document.getElementById("display");
+                         var test ;
+        
+                    var min=1; 
+               var max=10;  
+                     var random = Math.floor(Math.random() * (max - min)) + min; 
+                if(random%2 == 0)
+     {
+          
+        test=1;
+        
+        
+     }
+     else
+     {
+        
+        test=2;
+        
+        
+    
+     }
+
+     btn.onclick = function () {
+    count=1;
+   
+}
+
+btn1.onclick = function () {
+    count=2;
+    
+}     
+te.onclick = function(){
+   
+ if(test===count)
+   {
+       alert("succes");
+   }else{
+      alert("echec");
+   }
+
+}
+    
+
+   
+
+</script>
+</body>
+</html>
+
+
