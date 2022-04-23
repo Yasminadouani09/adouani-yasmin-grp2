@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="signst.css">
+</head>
+<body>
+    <section>
+        <div class="alaa"></div>
+        <div class="alaa"></div>
+        <div class="alaa"></div>
+        <div class="box">
+            <div class="alaa1" style="--i:0;"></div>
+            <div class="alaa1" style="--i:1;"></div>
+            <div class="alaa1" style="--i:2;"></div>
+            <div class="alaa1" style="--i:3;"></div>
+            <div class="alaa1" style="--i:4;"></div>
+        <div class="container">
+            <div class="form">
+        <center>
+            <h2>Fill in the form please!</h2>
+            <form name="myForm" onsubmit="validateForm()" method="post" id="myForm" action="jeux.html">
+                <table class="shebox">
+                    
+                    <tr>
+                       
+                        <td>
+                            <div class="shebox">
+                                <input type="text"maxlength="15" id="name" placeholder="Firstname" name="name" >
+                            </div>  
+                        </td>
+                     </tr>
+                     <tr>
+                       
+                        <td>
+                            <div class="shebox">
+                                <input type="text"maxlength="15" id="surname" placeholder="Name" name="namee" >
+                            </div>  
+                        </td>
+                     </tr>
+                    </table> 
+        
+       <div class="shebox">
+        <input type="email" maxlength="35" placeholder="Email : aaaaa@gmail.com">
+       </div>
+       <div class="shebox">
+        <input type="password" placeholder="Password " minlength="7" >
+       </div>
+   
+    <div class="shebox">
+    
+        <input type="submit" value="Send">
+        <input type="reset" value="Cancel">
+    </div>
+        
+        
+ 
+            </form>
+           
+        </center>
+    </div>
+    </div>
+</div>
+    
+    </section>
+    
+   
+
+
+<script>
+    function validateForm()                                    
+{ 
+    var name = document.forms["myForm"]["name"];               
+    var namee = document.forms["myForm"]["namee"];    
+   
+   
+    
+        if (name.value.match( /[0-9]/g))
+        {
+            alert("c'est interdit d'utiliser les chiffres !  ");
+            return false;
+        }
+        if (namee.value.match( /[0-9]/g))
+        {
+            alert("c'est interdit d'utiliser les chiffres !  ");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
